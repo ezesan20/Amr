@@ -1,0 +1,1115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'PT Sans Narrow', sans-serif;
+   
+
+}
+/* Navegacion */
+.container{
+    width: 100%;
+    margin: auto;
+}
+.nav-main ul img{
+    width: 160px;
+    
+    padding: 20px ;
+    margin: 15px 15px 15px 15px;
+    
+    
+    
+   
+}
+.nav-main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    height: 60px;
+    padding: 50px;
+    background: rgb(101, 1, 6);
+    box-shadow: 10px 10px 10px   rgb(126, 121, 121);
+    letter-spacing: 2px;
+
+    
+    
+}
+/* Menu  */
+.menu-btn{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    top:15px;
+    right: 30px;
+    font-size: 50px;
+    color: white;
+}
+
+/* */
+
+
+.nav-main ul{
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    margin-left: 190px;
+    font-size: 19px;
+    
+   
+  
+    
+}
+
+.nav-main ul li{
+    padding: 60px;
+    
+}
+
+.nav-main ul li {
+    margin-top: 10px;
+    
+}
+
+
+
+a{
+    color: white;
+  text-decoration: none;
+  list-style: none;
+}
+
+/* Section */
+
+.general{
+    width: 100%;
+    margin: auto;
+}
+
+.cursos {
+    display: grid;
+    grid-template-columns: 12% 12% 12% 12% 12%;
+    margin-top: 25px;
+    place-content: center;
+    
+}
+
+
+
+.cursos h2{
+    font-size: 15px;
+    display: flex;
+    text-align: center;
+    margin-left: 8px;
+}
+
+
+
+.cursos .tijera li h2{
+    white-space: pre-line;
+}
+
+.cursos li{
+    text-decoration: none;
+    list-style: none;
+}
+
+.cursos li img{
+    width: 70px;
+}
+
+/*slide 3d */
+
+.general_slide{
+    background: rgb(101, 1, 6);
+    box-shadow: 10px 10px 10px   rgb(126, 121, 121);
+  
+    padding-bottom: 90px;
+    margin-top: 20px;
+}
+
+.container-slide{
+    
+    max-width: 1000px;
+    height: 500px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 10px;
+
+
+
+}
+input[type=radio]{
+    display: none;
+}
+
+.container-1{
+    margin-top: 50px;
+    width: 100%;
+    height: 100%;
+    max-width: 1100px;
+    max-height: 600px;
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.cards{
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+}
+.card{
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    cursor: pointer;
+    transition: transform 0.4s cubic-bezier(0.165, 0.84,0.44,1);
+    border: solid 2px white;
+}
+.cards img{
+    width: 100%;
+    height: 100%;
+    
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+#item-2:checked ~ .cards #selector-1,
+#item-1:checked ~ .cards #selector-3,
+#item-3:checked ~ .cards #selector-2,
+#item-4:checked ~ .cards #selector-5,
+#item-5:checked ~ .cards #selector-4{
+    transform: translateX(-50%) scale(0.8);
+    z-index: 0;
+}
+
+#item-3:checked ~ .cards #selector-1,
+#item-1:checked ~ .cards #selector-2,
+#item-2:checked ~ .cards #selector-3,
+#item-5:checked ~ .cards #selector-4,
+#item-4:checked ~ .cards #selector-5{
+    transform: translateX(50%) scale(0.8);
+    z-index: 0;
+}
+
+#item-1:checked ~ .cards #selector-1,
+#item-2:checked ~ .cards #selector-2,
+#item-3:checked ~ .cards #selector-3,
+#item-4:checked ~ .cards #selector-4,
+#item-5:checked ~ .cards #selector-5{
+    transform: translateX(0) scale(1);
+    z-index: 1;
+}
+
+
+
+.opiniones_publicas{
+    width: 100%;
+    margin: auto;
+    height: 550px;
+    padding-bottom: 50px;
+    background:  rgb(101, 1, 6);
+    box-shadow: 10px 10px 10px   rgb(126, 121, 121);
+    
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 30% 35%;
+    margin-left: 20px;
+    
+   
+    justify-content: center;
+    text-align: center;
+   
+
+}
+.opiniones_publicas h1{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top: 100px;
+    font-size: 50px;
+    
+    
+}
+ span{
+    
+    color: rgb(255, 255, 255);
+}
+.opinion_1 img{
+    width: 150px;
+    color: white;
+}
+
+.opinion_1 p{
+    white-space: pre-line;
+    color: white;
+    font-size: 20px;
+}
+.opinion_2 img {
+    width: 150px;
+}
+.opinion_2 p{
+    white-space: pre-line;
+    color: white;
+    font-size: 20px;
+}
+.opinion_3 img{
+    width: 150px;
+}
+.opinion_3 p{
+    white-space: pre-line;
+    color: white;
+    font-size: 20px;
+}
+    
+.opinion_4 img{
+    width: 150px;
+}
+
+.opinion_4 p{
+    white-space: pre-line;
+    color: white;
+    font-size: 20px;
+}
+.grid_cursos{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+   
+    
+    
+}
+.cursos_destacados{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+    
+   
+    
+}
+
+.targeta{
+    
+    position: relative;
+    width: 300px;
+    height: 350px;
+    justify-content: space-between;
+    margin: 10px;
+    
+   
+   
+   
+    
+
+   
+    
+    
+    
+}
+
+.targeta .face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5;
+}
+
+.targeta .front{
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px black;
+}
+
+.targeta .front img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.targeta .front h3{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    color: white;
+    line-height: 45px;
+    background: rgb(101, 1, 6);
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 2px;
+
+
+}
+
+.targeta .back{
+    transform: perspective(600px) rotateY(180deg);
+    background: rgb(101, 1, 6);
+    padding: 15px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0  5px 10px black;
+
+
+}
+.targeta .back .link{
+    border-top:solid 1px white ;
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+}
+.targeta .back h3{
+    
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+
+.targeta .back p{
+    letter-spacing: 1px;
+    margin-bottom: 50px;
+}
+
+
+
+.targeta:hover .front{
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.targeta:hover .back{
+    transform: perspective(600px) rotateY(360deg);
+}
+
+.titulo h1{
+    font-size: 50px;
+    text-align: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.final{
+     
+    width: 100%;
+    height: 200px;
+    background: rgb(101, 1, 6);
+    padding-top: 20px;
+}
+
+.grid_final{
+    display: grid;
+    grid-template-columns: 20% 20%;
+    text-align: center;
+    justify-content: center;
+}
+
+.grid_final h2{
+    font-size: 29px;
+    color: white;
+}
+
+.final p{
+    color: white;
+    font-size: 29px;
+    text-align: center;
+    align-items: center;
+    margin-top: 20px;
+}
+/* productos */ 
+.grid_producto{
+    display: grid;
+    grid-template-columns: 50% 50% 50%;
+    margin-top: 50px;
+    margin-right: 250px;
+    padding-top: 20px;
+    margin-bottom: 25px;
+   
+    
+    
+}
+.productos_destacados{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+/* nosotros */
+
+
+.contenedor_info{
+    margin-top: 29px;
+    width: 100%;
+    height: 300px;
+    background: rgb(101, 1, 6);
+    
+}
+
+.contenedor_info h1{
+    text-align: center;
+    justify-content: center;
+    margin-right: 50px;
+    padding-top: 100px;
+    font-size: 69px;
+    color: aliceblue;
+    letter-spacing: 2px;
+}
+
+.grid_nosotros{
+    display: grid;
+    grid-template-columns: 50% 30%;
+    margin-top: 50px;
+    
+   
+}
+.grid_nosotros p{
+    white-space: pre-line;
+    margin-left: 10px;
+    font-size: 25px;
+    margin-top: 20px;
+}
+.grid_nosotros img{
+    width: 600px;
+    
+    
+    
+}
+
+.ana_enseñando{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 50px;
+   
+}
+
+.ana_enseñando img{
+    width: 350px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    margin-left: 20px;
+}
+
+.ana_enseñando p{
+    white-space: pre-line;
+    margin-right: 20px;
+    font-size: 25px;
+    margin-top: 90px;
+
+}
+
+/* contacto */
+
+.grid_contacto{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 100%;
+    margin: auto;
+    width: 100%;
+    background:  rgb(101, 1, 6) ;
+    margin-top: 29px;
+    margin-bottom: 60px;
+}
+.mapa{
+    margin: auto;
+}
+.info_contacto{
+    margin-top: 100px;
+   
+   
+    
+}
+
+.info_contacto h1{
+    color: white;
+    font-size: 50px;
+    letter-spacing: 2px;
+
+}
+
+.info_contacto p{
+    color: white;
+    white-space: pre-line;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.redes_contacto {
+    display: inline-block;
+    
+}
+
+.redes_contacto img{
+    justify-content: space-between;
+    width: 40px;
+    margin: 30px;
+    
+}
+
+.informacion_2{
+    
+    margin-top: 20px;
+    font-size: 40px;
+    color: white;
+    justify-content: space-between;
+    margin: 10px;
+    
+}
+
+.informacion_2 i {
+    margin: 10px;
+}
+
+/* salon */
+
+.imagen_salon{
+    width: 100%;
+    height: 300px;
+    background: rgb(101, 1, 6);
+    margin-top: 20px;
+}
+
+.imagen_salon h1{
+    color: white;
+    font-size: 80px;
+    text-align: center;
+    padding-top: 80px;
+   
+}
+
+.salon_info{
+    display: grid;
+    grid-template-columns: 20% 20%;
+    align-items: center;
+    margin-top: 50px;
+    justify-content: center;
+}
+
+.salon_info .targeta p{
+    font-size: 20px;
+}
+
+.final-informacion{
+    width: 100%;
+    height: 400px;
+    background: rgb(101, 1, 6);
+    margin-top: 20px;
+}
+
+.grid_salon{
+    display: grid;
+    grid-template-columns: 50% 50% ;
+}
+.grid_salon p{
+    color: white;
+    font-size: 25px;
+    white-space: pre-line;
+    margin-left: 20px;
+    margin-top: 50px;
+}
+.grid_salon img {
+    width: 500px;
+
+}
+
+.boton{
+    
+    cursor: pointer;
+    font-size: 50px;
+    margin: 10px;
+    border: 0;
+    font-weight: bold;
+    padding: 10px 20px;
+    background: rgb(159, 77, 77);
+    font-size: 20px;
+    border: solid 1px white;
+   margin-left: 20px;
+    
+}
+
+.trabajos_alumnos h1{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+
+}
+
+.grid_alumnos{
+    display: grid;
+    grid-template-columns: 20% 30% 30%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+
+}
+
+.grid_alumnos img{
+    width: 200px;
+}
+
+/* Peluqueria femenina */
+
+.container_peluqueria{
+    width: 100%;
+    height: 300px;
+    background: rgb(101, 1, 6);
+    margin-top: 20px;
+}
+
+.texto_peluqueria{
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding-top: 60px;
+    letter-spacing: 2px;
+}
+
+.container_grid{
+    display: flex;
+   
+    
+    justify-content: center;
+}
+.grid_peluqueria{
+    display: grid;
+    grid-template-columns: 50% 50%;
+   
+  
+   
+   
+}
+
+
+
+.info_peluqueria{
+    width: 100%;
+    height: 60%;
+    background: rgb(101, 1, 6);
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+
+.info_detalles h1{
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    align-self: center;
+
+}
+
+.info_detalles p{
+    color: white;
+    font-size: 20px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    white-space: pre-line;
+    padding-bottom: 5%;
+}
+
+.grid_info{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+    
+}
+
+/*barberia */
+
+.container_barberia{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: rgb(101, 1, 6);
+    margin-top: 20px;
+    width: 100%;
+    height: 20%;
+   
+}
+
+.info_barberia{
+    margin-top: 100px;
+    width: 100%;
+    height: 20%;
+    background: rgb(101, 1, 6);
+    padding-bottom: 50px;
+
+}
+
+.info_barberia h1{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.info_barberia p{
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    white-space: pre-line;
+}
+
+.container_info{
+    margin-top: 20px;
+}
+
+/* unisex */ 
+.info_unisex{
+    width: 100%;
+    height: 60%;
+    background: rgb(101, 1, 6);
+    margin-bottom: 100px;
+    margin-top: 50px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.unisex_detalles h1{
+    color: white;
+    text-align: center;
+    align-items: center;
+    font-size: 50px;
+   
+
+}
+
+.unisex_detalles p{
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+    color: white;
+}
+
+/* Colorometria */
+
+.info_colorometria{
+    width: 100%;
+    height: 60%;
+    background: rgb(101, 1, 6);
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+
+/* estetica */
+.estetica_cursos{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid_estetica{
+    display: grid;
+    grid-template-columns: 35% 35% 35%;
+    margin-top: 50px;
+    width: 80%;
+}
+
+.grid_estetica img{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+/* Navegacion celular */
+
+@media (max-width: 700px){
+    
+    .cursos{
+        grid-template-columns: 5% 5% 20%   ;
+        margin-top: 25px;
+        justify-content: space-between;
+
+
+       
+      }
+
+      .cursos li{
+        padding: 5px;
+        
+      
+      }
+
+      .cursos li img{
+        width: 50px;
+      }
+
+      .cursos li h2{
+        font-size: 15px;
+      }
+
+    .menu-btn{
+        display: block;
+    }
+
+   
+    .nav-main ul {
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgb(122, 46, 50);;
+        height: 120%;
+        padding: 30px;
+        z-index: 1;
+        
+        transform: translateX(-500px);
+        transition: transform .5s ease-in-out;
+
+    }
+
+
+    .nav-main{
+        transition: transform .5s ease-in-out;
+    }
+
+    .nav-main ul.enlaces.show{
+        transform: translateX(-200px);
+    }
+ 
+    
+    .container-slide{
+    
+        height: 300px;
+      
+    
+}
+
+
+    .card{
+       
+        width: 70%;
+        height: 80%;
+       
+    }
+
+
+    .opiniones_publicas {
+        height: 900px;
+       
+
+    }
+
+    .grid{
+        grid-template-columns: repeat(1,1fr);
+    }
+   
+    .opiniones_publicas h1{
+        font-size: 29px;
+        margin-bottom: 20px;
+
+    }
+    .opiniones_publicas p{
+        font-size: 15px
+
+       
+      
+       
+    
+    }
+
+    
+    .grid_cursos{
+        grid-template-columns: repeat(1,1fr);
+        
+        
+        
+        
+
+    }
+  .cursos_destacados{
+    min-height: 50vh;
+    margin: 20px;
+    
+    
+    
+  }
+
+  .final{
+    height: 250px;
+  }
+  .grid_final{
+    grid-template-columns: 30% 30%;
+    
+    
+  }
+
+  .grid_final h2{
+    font-size: 20px;
+    margin-top: 10px;
+  }
+
+   .final p{
+    font-size: 25px;
+   }
+   .grid_producto{
+    grid-template-columns: repeat(1,1fr);
+    width: 20%;
+
+   }
+
+   .contenedor_info h1{
+    font-size: 39px;
+    white-space: pre-line;
+
+}
+
+ .grid_nosotros{
+   
+    grid-template-columns: repeat(1,1fr);
+
+}
+.grid_nosotros img{
+    
+    width: 300px;
+    margin-left: 50px;
+    
+   
+   
+}
+.grid_nosotros p{
+    font-size: 18px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.ana_enseñando{
+    grid-template-columns: repeat(1,1fr);
+
+}
+
+.ana_enseñando img{
+    width: 250px;
+    margin-left: 80px;
+    
+}
+
+.ana_enseñando p{
+    font-size: 20px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.grid_contacto{
+ grid-template-columns: repeat(1,1fr);
+}
+.grid_contacto .mapa{
+    display: flex;
+}
+.mapa{
+    width: 60%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+ .info_contacto{
+    margin-left: 20px;
+   
+
+    
+}
+
+.salon_info{
+   grid-template-columns: repeat(1,1fr);
+   
+}
+
+.grid_salon{
+    grid-template-columns: repeat(1,1fr);
+}
+.grid_salon img{
+    width: 80%;
+    margin-left: 20px;
+    margin-top: 20px;
+    
+    
+    
+}
+
+.grid_salon  p{
+    font-size: 20px;
+}
+
+.trabajos_alumnos{
+    margin-top: 150px;
+}
+
+.grid_alumnos{
+    grid-template-columns: repeat(1,1fr);
+    
+
+}
+
+.grid_peluqueria{
+   grid-template-columns: repeat(1,1fr);
+}
+    
+.info_detalles p{
+    
+    font-size: 90%;
+    
+}
+
+.grid_info{
+  font-size: 30px;
+    
+    
+}
+.container_barberia {
+    width: 100%;
+   height: 250px;
+   
+
+}
+
+.info_barberia p{
+    font-size: 18px;
+}
+
+.info_colorometria p{
+    font-size: 18px;
+}
+
+.grid_estetica{
+  grid-template-columns: repeat(2,1fr);
+  width: 120%;
+}
+
+}
